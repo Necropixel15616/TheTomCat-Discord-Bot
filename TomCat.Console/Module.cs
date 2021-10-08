@@ -254,7 +254,7 @@ namespace TomCat.Main
         {
             //The Generic Help text
             {
-                await ReplyAsync("```\nThis is the Help Command!\nThe following are a list of commands TheTomCat can execute. Type !help {command} to view the help in more detail:\n\n"
+                await ReplyAsync("```\nThis is the Help Command!\nThe following are a list of commands TheTomCat can execute. Type ?help {command} to view the help in more detail:\n\n"
                   + "raffle --- The Raffle Function for TheTomCat\n"
                   + "menu --- The Menu for The Tom Cat Nightclub\n"
                   //+ "theme --- Information regarding the next theme night at The Tom Cat"
@@ -267,9 +267,9 @@ namespace TomCat.Main
         public async Task HelpRaffleAsync()
         {
             //the raffle help text
-            await ReplyAsync("```This is TheTomCat's Raffle function. To operate, you must type !raffle followed by one of the sub-commands\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n" +
-                "add --- add tickets to the raffle. Requires a name and ticket amount. for multiple word names, enclose it within quotation marks. E.g. !raffle add \"Necro Pixel\" 10\n\n" +
-                "remove --- remove tickets from the raffle. Specify the name and the amount. If the amount is left empty or 0 is given, it will remove all the tickets of that entry. E.G !raffle remove \"Necro Pixel\" 3\n\n" +
+            await ReplyAsync("```This is TheTomCat's Raffle function. To operate, you must type ?raffle followed by one of the sub-commands\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n" +
+                "add --- add tickets to the raffle. Requires a name and ticket amount. for multiple word names, enclose it within quotation marks. E.g. ?raffle add \"Necro Pixel\" 10\n\n" +
+                "remove --- remove tickets from the raffle. Specify the name and the amount. If the amount is left empty or 0 is given, it will remove all the tickets of that entry. E.G ?raffle remove \"Necro Pixel\" 3\n\n" +
                 "list --- list all the registered tickets in the raffle\n\n" +
                 "clear --- clear the raffle. This will remove **EVERY** ticket\n\n" +
                 "draw --- draw the raffle. This will Choose the winner and then clear the raffle\n" +
